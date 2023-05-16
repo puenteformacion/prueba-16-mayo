@@ -1,0 +1,23 @@
+main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 30px;
+}
+div#thumbnails {
+  width: 20%;
+}
+div#container {
+  width: 80%;
+}
+div#thumbnails img {
+  width: 100%;
+  height: auto;
+}
+div#container img {
+  width: 100%;
+  height: auto;
+}
+img {
+  border: 1px solid rgb(72, 114, 72);
+}
