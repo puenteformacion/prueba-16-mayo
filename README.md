@@ -1,3 +1,4 @@
-# prueba-16-mayo
-## este proyecto es con fines educativos
-curso diseño web
+# ESTE ES EL PRIMER JEMPLO DE UN README
+## practicando con github
+### primeras prácticas
+Esto es un ejemplo
