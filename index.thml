@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div id="thumbnails">
+            <img src="img/sneaker_350_A.jpg" id="bambaA" alt="zapatilla Piola 1">
+            <img src="img/sneaker_350_B.jpg" id="bambaB" alt="zapatilla Piola 2">
+            <img src="img/sneaker_350_C.jpg" id="bambaC" alt="zapatilla Piola 3">
+            <img src="img/sneaker_350_D.jpg" id="bambaD" alt="zapatilla Piola 4">
+
+        </div>
+        <div id="container">
+            <img id="fotoGran" src="img/sneaker_1200_A.jpg" alt="">
+        </div>
+
+    </main>
+    <script>
+
+        //selecciono els elements
+        let lateralA = document.getElementById("bambaA"); //seleccionem id dels articles
+        let lateralB = document.getElementById("bambaB"); //seleccionem id dels articles
+        let lateralC = document.getElementById("bambaC"); //seleccionem id dels articles
+        let lateralD = document.getElementById("bambaD"); //seleccionem id dels articles
+
+        let imatgeGran = document.getElementById("fotoGran");// declarada genèrica ,ja que és el container
+
+        // funciones
+        function ferFotoGranA() {
+            imatgeGran.setAttribute("src", "img/sneaker_1200_A.jpg")
+        }
+
+        function ferFotoGranB() {
+            imatgeGran.setAttribute("src", "img/sneaker_1200_B.jpg")
+        }
+
+        function ferFotoGranC() {
+            imatgeGran.setAttribute("src", "img/sneaker_1200_C.jpg")
+        }
+        function ferFotoGranD() {
+            imatgeGran.setAttribute("src", "img/sneaker_1200_D.jpg")
+        }
+        // Listeners i call-backs a les funcions
+        lateralA.addEventListener("mouseover", ferFotoGranA);
+        lateralB.addEventListener("mouseover", ferFotoGranB);
+        lateralC.addEventListener("mouseover", ferFotoGranC);
+        lateralD.addEventListener("mouseover", ferFotoGranD);
+
+    </script>
+</body>
+
+</html>
